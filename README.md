@@ -1,6 +1,6 @@
 # PostgreSQL TimescaleDB .NET 8 Web API
 
-This project demonstrates how to build a .NET 8 Web API application that leverages PostgreSQL with TimescaleDB extension to handle transaction data. The application showcases various TimescaleDB features including time-series data analysis, high-volume transaction processing, data retention policies, and TimescaleDB-specific optimizations.
+This project demonstrates how to build a .NET 8 Web API application that leverages PostgreSQL with TimescaleDB extension to handle transaction data. The application showcases various TimescaleDB features including time series data analysis, high volume transaction processing, data retention policies, and TimescaleDB specific optimizations.
 
 ## Project Structure
 
@@ -14,6 +14,13 @@ This project demonstrates how to build a .NET 8 Web API application that leverag
 - **TimescaleDB Integration**: Hypertables, continuous aggregates, and other TimescaleDB features
 - **Test Data Generation**: Automatic generation of sample transaction data
 - **Swagger Documentation**: Interactive API documentation
+
+## TimescaleDB Features Used
+
+- **Hypertables**: Automatic partitioning of time-series data
+- **Continuous Aggregates**: Pre-computed aggregations for faster queries
+- **Time Bucketing**: Group data by time intervals
+- **Compression Policies**: Efficient storage of historical data
 
 ## Prerequisites
 
@@ -57,22 +64,6 @@ Open your browser and navigate to:
 - `GET /api/analytics/daily-summary`: Daily transaction aggregates
 - `GET /api/analytics/category-summary`: Category distribution analysis
 - `GET /api/analytics/time-comparison`: Compare transactions between time periods
-
-## TimescaleDB Features Used
-
-- **Hypertables**: Automatic partitioning of time-series data
-- **Continuous Aggregates**: Pre-computed aggregations for faster queries
-- **Time Bucketing**: Group data by time intervals
-- **Compression Policies**: Efficient storage of historical data
-
-## Project Documentation
-
-For more detailed information, see the following documentation:
-
-- [Architecture Plan](architecture-plan.md): Detailed system architecture and design
-- [Getting Started Guide](getting-started.md): Step-by-step instructions for setting up the development environment
-- [TimescaleDB Queries](timescaledb-queries.md): Sample queries for common transaction analysis scenarios
-- [Project Summary](project-summary.md): Overview of the project and its features
 
 ## License
 
